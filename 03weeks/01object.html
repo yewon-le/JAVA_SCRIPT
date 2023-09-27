@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function change() {
+        var p = document.getElementById ('secondP'); //DOM
+        alert("안녕하세요"); //BOM
+        let name = window.prompt("이름을 입력하세요","0"); //BOM
+        p.innerHTML = name;
+    }
+    function changeImg() {
+        let pimg = document.getElementById("threeP");
+        pimg.innerHTML = " <img src = dog.JPG>";
+
+    }
+    </script>
+</head>
+<body>
+    <h2 onclick="changeImg()"> innerHtml 활용 : 아래 글자 클릭!</h2>
+    <hr>
+    <p id="fristP" onmouseover= "change()" >
+        <span style="color:red"> 클릭하세요! </span>
+    </p>
+    <p d="secondP"></p>
+    <p d="threeP"><img src = dog.JPG></p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1 id="result" style="border:1px solid black; height:150px"></h1>
+
+    <script>
+        const COLOR1="#FA5882";
+        const COLOR2="##5882FA";
+        const COLOR3="##AC58FA";
+        const COLOR4="##58FAD0";
+
+        
+        let d = new Date();
+        let timeValue=d.getHours();
+
+        alert("time?" + timeValue);
+        let hi; let colorOBJ;
+        if ( timeValue => 5 && timeValue < 11 ){
+            hi = "Good morning"; colorOBJ=COLOR1;
+        } 
+        else if ( timeValue => 11 && timeValue < 16 ){
+            hi = "Good morning"; colorOBJ=COLOR2;
+        }
+        else if ( timeValue => 16 && timeValue < 19 ){
+            hi = "Good morning"; colorOBJ=COLOR3;
+        }    
+        else {
+            hi = "Good morning"; colorOBJ=COLOR4;
+        }
+
+        let displayOBJ = document.getElementById("result");
+        displayOBJ.innerHTML = hi;
+        displayOBJ.style.backgroundColor=colorOBJ;
+
+        //document.getElementById("result").inner.HTML = hi;
+        //33,34 줄 대신 36줄로 쓸 수 있음
+
+    </script>
+    
+</body>
+</html>
