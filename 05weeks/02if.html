@@ -8,9 +8,21 @@
         let id="dm";
         let pw="123";
         // 탈퇴하시겠습니다? ----> 
+        
+						
+						var a =prompt("아이디를 입력하세요","");
+						var b =prompt("비밀번호를 입력하세요","");
+						if(id==a && pw==b){
+							alert(id+"님 반갑습니다!")
+						}
+						else if (id==a & pw!=b){
+							alert("비밀번호가 일치하지 않습니다.");
+						}
+						else if (id!=a){
+							alert("아이디가 일치하지 않습니다.");
+						}
     </script>
 </head>
 <body>
-    
 </body>
 </html>
