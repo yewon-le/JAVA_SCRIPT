@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            let id="dm";
+            let pw="123";
+            var user_id = prompt ("아이디는?", "");
+            var user_id = prompt ("비밀번호는?", "");
+            if(id == user_id){
+                if(pw==user_id){
+                    document.write(user_id+"님 반갑습니다!");
+
+                }else{
+                    alert("비밀번호가 일치하지 않습니다!");
+                    location.reload();
+
+                }
+                }else{
+                alert ("아이디가 일치하지 않습니다.");
+                location.reload();
+            }
+
+            // 아이디와 암호를 입력받아서,
+            // 입력받은 아이디와 암호가 같으면 ----> id+ "님, 반갑습니다!",
+            // 아이디는 맞고, 암호가 틀리면 ----> "비밀번호가 일치하지 않습니다!"
+            // 아이디가 틀리면 ----> "아이디가 일치하지 않습니다!"
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+    </html>
