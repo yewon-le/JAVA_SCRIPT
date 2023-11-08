@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+</head>
+<body>
+    <script>
+        // Naviator 객체의 속성을 출력합니다.
+        let output = ' ';
+        output += 'appCodeName: ' + navigator.appCodeName + '\n';
+        output += 'appName: ' + navigator.appName + '\n';
+        output += 'appVersion: ' + navigator.appVersion + '\n';
+        output += 'platform: ' + navigator.platform + '\n';
+        output += 'userAgent: ' + navigator.userAgent + '\n';
+        alert(output);
+
+        // iOS와 안드로이드의 웹 브라우저 구분
+
+        if (navigator.userAgent.toLowerCase().includes('iphone')
+            || navigator.userAgent.toLowerCase().includes('ipad')
+            || navigator.userAgent.toLowerCase().includes('ipod')
+            || navigator.userAgent.toLowerCase().includes('android')) {
+            setTimeout(function () {
+                location.href = '02mobile.html';
+            }, 3000);
+
+        } else {
+            setTimeout(function () {
+                location.href = '02pc.html';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
